@@ -1,0 +1,4 @@
+C:\Users\80396\Documents\SAPU\SAPU\domian\obj\Debug\net8.0\SAPU.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\80396\Documents\SAPU\SAPU\domian\obj\Debug\net8.0\SAPU.Domain.AssemblyInfoInputs.cache
+C:\Users\80396\Documents\SAPU\SAPU\domian\obj\Debug\net8.0\SAPU.Domain.AssemblyInfo.cs
+C:\Users\80396\Documents\SAPU\SAPU\domian\obj\Debug\net8.0\SAPU.Domain.csproj.CoreCompileInputs.cache

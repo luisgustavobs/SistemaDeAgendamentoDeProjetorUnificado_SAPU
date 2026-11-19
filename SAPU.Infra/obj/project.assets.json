@@ -1,0 +1,126 @@
+{
+  "version": 4,
+  "targets": {
+    "net8.0": {
+      "SAPU.Appliacation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SAPU.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SAPU.Appliacation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SAPU.Appliacation.dll": {}
+        }
+      },
+      "SAPU.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SAPU.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SAPU.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SAPU.Appliacation/1.0.0": {
+      "type": "project",
+      "path": "../SAPU.Appliacation/SAPU.Appliacation.csproj",
+      "msbuildProject": "../SAPU.Appliacation/SAPU.Appliacation.csproj"
+    },
+    "SAPU.Domain/1.0.0": {
+      "type": "project",
+      "path": "../domian/SAPU.Domain.csproj",
+      "msbuildProject": "../domian/SAPU.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SAPU.Appliacation >= 1.0.0",
+      "SAPU.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\80396\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\SAPU.Infra\\SAPU.Infra.csproj",
+      "projectName": "SAPU.Infra",
+      "projectPath": "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\SAPU.Infra\\SAPU.Infra.csproj",
+      "packagesPath": "C:\\Users\\80396\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\SAPU.Infra\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\80396\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\domian\\SAPU.Domain.csproj": {
+              "projectPath": "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\domian\\SAPU.Domain.csproj"
+            },
+            "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\SAPU.Appliacation\\SAPU.Appliacation.csproj": {
+              "projectPath": "C:\\Users\\80396\\Documents\\SAPU\\SAPU\\SAPU.Appliacation\\SAPU.Appliacation.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.400"
+    },
+    "frameworks": {
+      "net8.0": {
+        "framework": "net8.0",
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

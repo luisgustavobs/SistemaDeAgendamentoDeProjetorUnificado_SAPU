@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="domian/SAPU.Domain.csproj" />
+  <Project Path="SAPU.Appliacation/SAPU.Appliacation.csproj" />
+  <Project Path="SAPU.CrossCutting/SAPU.CrossCutting.csproj" />
+  <Project Path="SAPU.Infra/SAPU.Infra.csproj" />
+  <Project Path="SAPU.Presentation/SAPU.Presentation.csproj" />
+</Solution>
