@@ -15,8 +15,8 @@ public class RegistroPerifericoMapping : IEntityTypeConfiguration<RegistroPerife
     {
         builder.HasKey(a => a.IdRegistroPeriferico);
         builder.HasOne(a => a.Periferico)
-            .WithMany(p => p.RegistroPerifericos).HasForeignKey(a => a.IdPeriferico);
+            .WithMany(p => p.RegistroPerifericos).HasForeignKey(a => a.IdPeriferico).OnDelete(DeleteBehavior.Restrict);
         builder.HasOne(a => a.Registro)
-            .WithMany(p => p.RegistroPerifericos).HasForeignKey(a => a.IdRegistro);
+            .WithMany(p => p.RegistroPerifericos).HasForeignKey(a => a.IdRegistro).OnDelete(DeleteBehavior.Restrict);
     }
 }

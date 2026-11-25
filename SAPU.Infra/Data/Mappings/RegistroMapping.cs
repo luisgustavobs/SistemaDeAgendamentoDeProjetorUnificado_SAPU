@@ -15,10 +15,10 @@ public class RegistroMapping : IEntityTypeConfiguration<Registro>
     {
         builder.HasKey(a => a.IdRegistro);
         builder.HasOne(a => a.Professor)
-            .WithMany(p => p.Registros).HasForeignKey(a => a.IdProfessor);
+            .WithMany(p => p.Registros).HasForeignKey(a => a.IdProfessor).OnDelete(DeleteBehavior.Restrict);
         builder.HasOne(a => a.Projetor)
-            .WithMany(p => p.Registros).HasForeignKey(a => a.IdProjetor);
+            .WithMany(p => p.Registros).HasForeignKey(a => a.IdProjetor).OnDelete(DeleteBehavior.Restrict);
         builder.HasOne(a => a.Agendamento)
-            .WithMany(p => p.Registros).HasForeignKey(a => a.IdAgendamento);
+            .WithMany(p => p.Registros).HasForeignKey(a => a.IdAgendamento).OnDelete(DeleteBehavior.Restrict);
     }
 }

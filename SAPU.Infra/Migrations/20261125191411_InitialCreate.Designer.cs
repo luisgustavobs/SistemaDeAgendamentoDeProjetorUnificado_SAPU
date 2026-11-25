@@ -12,7 +12,7 @@ using SAPU.Infra.Data;
 namespace SAPU.Infra.Migrations
 {
     [DbContext(typeof(SAPUDbContext))]
-    [Migration("20261125175918_InitialCreate")]
+    [Migration("20261125191411_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -249,7 +249,7 @@ namespace SAPU.Infra.Migrations
                     b.HasOne("SAPU.Domain.Professor", "Professor")
                         .WithMany("Agendamentos")
                         .HasForeignKey("IdProfessor")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Professor");
@@ -260,7 +260,7 @@ namespace SAPU.Infra.Migrations
                     b.HasOne("SAPU.Domain.Agendamento", "Agendamento")
                         .WithMany("DiaAgendados")
                         .HasForeignKey("IdAgendamento")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Agendamento");
@@ -271,19 +271,19 @@ namespace SAPU.Infra.Migrations
                     b.HasOne("SAPU.Domain.Agendamento", "Agendamento")
                         .WithMany("Registros")
                         .HasForeignKey("IdAgendamento")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("SAPU.Domain.Professor", "Professor")
                         .WithMany("Registros")
                         .HasForeignKey("IdProfessor")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("SAPU.Domain.Projetor", "Projetor")
                         .WithMany("Registros")
                         .HasForeignKey("IdProjetor")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Agendamento");
@@ -298,13 +298,13 @@ namespace SAPU.Infra.Migrations
                     b.HasOne("SAPU.Domain.Periferico", "Periferico")
                         .WithMany("RegistroPerifericos")
                         .HasForeignKey("IdPeriferico")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("SAPU.Domain.Registro", "Registro")
                         .WithMany("RegistroPerifericos")
                         .HasForeignKey("IdRegistro")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Periferico");

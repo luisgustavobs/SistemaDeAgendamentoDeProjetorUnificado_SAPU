@@ -16,6 +16,6 @@ public class AgendamentoMapping:IEntityTypeConfiguration<Agendamento>
     {
         builder.HasKey(a => a.IdAgendamento);
         builder.HasOne(a => a.Professor)
-            .WithMany(p => p.Agendamentos).HasForeignKey(a => a.IdProfessor);
+            .WithMany(p => p.Agendamentos).HasForeignKey(a => a.IdProfessor).OnDelete(DeleteBehavior.Restrict);
     }
 }

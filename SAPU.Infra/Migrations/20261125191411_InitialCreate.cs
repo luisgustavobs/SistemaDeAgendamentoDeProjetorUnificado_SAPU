@@ -81,7 +81,7 @@ namespace SAPU.Infra.Migrations
                         column: x => x.IdProfessor,
                         principalTable: "Professores",
                         principalColumn: "IdProfessor",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -105,7 +105,7 @@ namespace SAPU.Infra.Migrations
                         column: x => x.IdAgendamento,
                         principalTable: "Agendamentos",
                         principalColumn: "IdAgendamento",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -131,19 +131,19 @@ namespace SAPU.Infra.Migrations
                         column: x => x.IdAgendamento,
                         principalTable: "Agendamentos",
                         principalColumn: "IdAgendamento",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Registros_Professores_IdProfessor",
                         column: x => x.IdProfessor,
                         principalTable: "Professores",
                         principalColumn: "IdProfessor",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Registros_Projetores_IdProjetor",
                         column: x => x.IdProjetor,
                         principalTable: "Projetores",
                         principalColumn: "IdProjetor",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -165,13 +165,13 @@ namespace SAPU.Infra.Migrations
                         column: x => x.IdPeriferico,
                         principalTable: "Perifericos",
                         principalColumn: "IdPeriferico",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_RegistrosPerifericos_Registros_IdRegistro",
                         column: x => x.IdRegistro,
                         principalTable: "Registros",
                         principalColumn: "IdRegistro",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
