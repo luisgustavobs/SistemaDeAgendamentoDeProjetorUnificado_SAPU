@@ -12,7 +12,7 @@ public class Registro
     public Projetor Projetor { get; set; }
     public List<RegistroPeriferico> RegistroPerifericos { get; set; }
     public DateTime HorarioRetirada { get; set; }
-    public DateTime HorarioDevolucao { get; set; }
+    public DateTime? HorarioDevolucao { get; set; }
     public DateTime DataCadastro { get; set; }
     public bool Ativo { get; set; }
 

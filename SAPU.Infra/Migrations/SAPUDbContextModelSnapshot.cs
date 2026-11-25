@@ -182,7 +182,7 @@ namespace SAPU.Infra.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("HorarioDevolucao")
+                    b.Property<DateTime?>("HorarioDevolucao")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("HorarioRetirada")
