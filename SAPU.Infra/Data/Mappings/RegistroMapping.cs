@@ -18,5 +18,7 @@ public class RegistroMapping : IEntityTypeConfiguration<Registro>
             .WithMany(p => p.Registros).HasForeignKey(a => a.IdProfessor);
         builder.HasOne(a => a.Projetor)
             .WithMany(p => p.Registros).HasForeignKey(a => a.IdProjetor);
+        builder.HasOne(a => a.Agendamento)
+            .WithMany(p => p.Registros).HasForeignKey(a => a.IdAgendamento);
     }
 }

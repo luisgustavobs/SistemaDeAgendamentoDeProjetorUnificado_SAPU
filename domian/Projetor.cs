@@ -5,7 +5,6 @@ namespace SAPU.Domain;
 public class Projetor
 {
     public int IdProjetor { get; set; }
-    public int IdRegistro { get; set; }
     public List<Registro> Registros { get; set; }
     public TipoProjetor Tipo { get; set; }
     public Estado Estado { get; set; }

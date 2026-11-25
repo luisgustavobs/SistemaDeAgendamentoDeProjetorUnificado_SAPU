@@ -21,7 +21,7 @@ public class SAPUDbContext: DbContext
         modelBilder.ApplyConfigurationsFromAssembly(typeof(SAPUDbContext).Assembly);
     }
 
-    private SAPUDbContext(DbContextOptions<SAPUDbContext> options): base(options)
+    public SAPUDbContext(DbContextOptions<SAPUDbContext> options): base(options)
     {
 
     }

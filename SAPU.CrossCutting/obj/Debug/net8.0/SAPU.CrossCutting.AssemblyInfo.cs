@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAPU.CrossCutting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f2fecc690ed678b06ce3479ebda099e945b2daa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851d88e17960092facdce5db9b7a074aee95c910")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAPU.CrossCutting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAPU.CrossCutting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
