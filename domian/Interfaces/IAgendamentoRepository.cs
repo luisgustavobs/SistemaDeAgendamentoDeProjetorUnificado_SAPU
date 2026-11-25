@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAPU.Domain.Interfaces;
 
-public interface IAgendamento
+public interface IAgendamentoRepository
 {
     Task<Agendamento?> ObterPorIdAsync(int idAgendamento);
     Task<List<Agendamento>> ListarAtivosPorProfessorAsync(int idProfessor);

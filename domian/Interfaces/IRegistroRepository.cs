@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAPU.Domain.Interfaces;
 
-public interface IRegistro
+public interface IRegistroRepository
 {
     Task<Registro?> ObterPorIdAsync(int idRegistro);
     Task<Registro?> ObterEmAbertoPorProjetorAsync(int idProjetor);

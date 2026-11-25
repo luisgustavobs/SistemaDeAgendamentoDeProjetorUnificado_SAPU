@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAPU.Domain.Interfaces;
 
-public interface IProfessor
+public interface IProfessorRepository
 {
     Task<Professor?> ObterPorIdAsync(int idProfessor);
     Task<Professor?> ObterPorMatriculaAsync(string matricula);

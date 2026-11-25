@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SAPU.Domain.Interfaces;
 
-public interface IProjetor
+public interface IProjetorRepository
 {
     Task<Projetor?> ObterPorIdAsync(int idProjetor);
     Task<Projetor?> ObterPorNumeroAsync(int numero);

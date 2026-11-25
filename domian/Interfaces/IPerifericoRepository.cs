@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SAPU.Domain.Interfaces;
 
-public interface IPeriferico
+public interface IPerifericoRepository
 {
     Task<Periferico?> ObterPorIdAsync(int idPeriferico);
     Task<List<Periferico>> ListarAtivosAsync();

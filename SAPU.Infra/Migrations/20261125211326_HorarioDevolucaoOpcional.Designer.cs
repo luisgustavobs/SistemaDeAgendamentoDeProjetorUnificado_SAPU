@@ -12,8 +12,8 @@ using SAPU.Infra.Data;
 namespace SAPU.Infra.Migrations
 {
     [DbContext(typeof(SAPUDbContext))]
-    [Migration("20261125204149_IntitialCreate")]
-    partial class IntitialCreate
+    [Migration("20261125211326_HorarioDevolucaoOpcional")]
+    partial class HorarioDevolucaoOpcional
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
