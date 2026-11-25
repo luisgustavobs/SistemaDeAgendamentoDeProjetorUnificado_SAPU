@@ -4,6 +4,7 @@ namespace SAPU.Domain;
 public class Agendamento
 {
     public int IdAgendamento { get; set; }
+    public int IdProfessor { get; set; }
     public Professor Professor { get; set; }
     public DateTime DataInicio { get; set; }
     public DateTime DataFim { get; set; }

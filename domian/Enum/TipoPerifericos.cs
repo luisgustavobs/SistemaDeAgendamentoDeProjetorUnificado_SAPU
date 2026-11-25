@@ -9,5 +9,5 @@ public enum TipoPerifericos
     CaboEnergia = 4,
     CaboAudio = 5,
     Adaptador = 6,
-    Extensão = 7
+    Extensao = 7
 }

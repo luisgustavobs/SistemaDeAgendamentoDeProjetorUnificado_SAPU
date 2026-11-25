@@ -14,7 +14,7 @@ namespace SAPU.Domain
         public int IdPeriferico { get; set; }
 
         public Registro Registro { get; set; }
-        public Perifericos Perifericos { get; set; }
+        public Periferico Periferico { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
     }
